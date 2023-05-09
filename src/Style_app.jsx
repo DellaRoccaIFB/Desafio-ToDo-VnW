@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 export const Box = styled.div`
   border: solid 3px white;
-  width: 90%;
+  width: 50%;
   min-height: 30%;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,9 @@ export const Box = styled.div`
   align-items: center;
   row-gap: 1vw;
   padding: 3vw 0 0 0;
+  @media (min-width:1920px) {
+  width: 80%;
+  }
 `;
 
 export const H2 = styled.h2`
