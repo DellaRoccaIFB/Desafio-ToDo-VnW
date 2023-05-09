@@ -9,14 +9,18 @@ export const Container = styled.div`
 `;
 export const Box = styled.div`
   border: solid 3px white;
-  width: 50%;
-  min-height: 30%;
+  width: 50vw;
+  min-height: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   row-gap: 1vw;
   padding: 3vw 0 0 0;
+  @media (min-width: 300px) and (max-width: 1000px) {
+    width: 85vw;
+    min-height: 30vw;
+  }
   @media (min-width:1920px) {
   width: 80%;
   }
@@ -24,6 +28,9 @@ export const Box = styled.div`
 
 export const H2 = styled.h2`
   font-size: 3vw;
+  @media (min-width: 300px) and (max-width: 1000px) {
+    font-size: 5vw;
+  }
 `;
 
 export const BoxInputAndButton = styled.div`
@@ -39,7 +46,10 @@ export const Input = styled.input`
   outline: none;
   font-size: 1.2vw;
   padding: 0 0 0 1vw;
-  &::placeholder {
+  @media (min-width: 300px) and (max-width: 1000px) {
+    width: 50vw;
+    height: 3vw;
+    font-size: 1.8vw;
   }
 `;
 export const ButtonAdd = styled.button`
@@ -58,6 +68,10 @@ export const ButtonAdd = styled.button`
     color: #171321;
     cursor: pointer;
   }
+  @media (min-width: 300px) and (max-width: 1000px) {
+    height: 3vw;
+    width: 7vw;
+  }
 `;
 
 export const Ul = styled.ul `
@@ -73,12 +87,21 @@ export const Li = styled.li `
     border-bottom: solid 1px #FFF;
     border-top: solid 1px #FFF;
     margin: 0 0 1vw 0;
+    @media (min-width: 300px) and (max-width: 1000px) {
+    min-height: 5vw;
+  }
 `
 
 export const H4 = styled.h4 `
 font-size: 1.5vw;
+@media (min-width: 300px) and (max-width: 1000px) {
+    font-size: 2vw;
+  }
 `
 export const Content = styled.p `
 font-size: 1.5vw;
 max-width: 80%;
+@media (min-width: 300px) and (max-width: 1000px) {
+    font-size: 2vw;
+  }
 `
